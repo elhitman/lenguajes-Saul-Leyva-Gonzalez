@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package lenguajes.saul.leyva.gonzalez;
-
+import java.util.Scanner;
 /**
  *
  * @author T-107
@@ -16,7 +16,15 @@ public class LenguajesSaulLeyvaGonzalez {
      */
     public static void main(String[] args) {
         
-        System.out.println("linea modificada");
+        Scanner dato=new Scanner(System.in);
+        double peso,altura,imc;
+        System.out.println("ingrese su peso en kg :");
+        peso=dato.nextDouble();
+        System.out.println("ingrese su altura en cm :");
+        altura=dato.nextDouble();
+        imc=peso/(altura*altura);
+        System.out.println("su indice de masa corporal es : "+imc);
+        
     }
     
 }
