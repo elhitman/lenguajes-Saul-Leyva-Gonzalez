@@ -16,7 +16,7 @@ public class LenguajesSaulLeyvaGonzalez {
      */
     public static void main(String[] args) {
         
-        System.out.println("mi primer programa de java II");
+        System.out.println("linea modificada");
     }
     
 }
