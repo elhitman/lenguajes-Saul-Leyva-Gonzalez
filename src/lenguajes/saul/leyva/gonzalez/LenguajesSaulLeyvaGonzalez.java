@@ -18,7 +18,7 @@ public class LenguajesSaulLeyvaGonzalez {
         
         Scanner dato=new Scanner(System.in);
         double peso,altura,imc;
-        System.out.println("ingrese su peso en kg :");
+        System.out.println("mi peso es de 75 kg");
         peso=dato.nextDouble();
         System.out.println("ingrese su altura en cm :");
         altura=dato.nextDouble();
