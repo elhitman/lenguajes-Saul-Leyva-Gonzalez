@@ -16,3 +16,65 @@ public class CalcArea {
     
     
     }
+
+
+
+
+
+
+
+ 
+public class Cuadrado {
+    
+ private float largo;
+ private float amcho;
+ private String figura;
+ 
+ public void setAncho(float ancho){
+     this.ancho=ancho; 
+ }
+ public void setLargo(float largo){
+    this.largo = largo;    
+ }
+    public float getAncho(){
+    return ancho;
+    }
+    public float getLargo(){
+    return largo;
+    }
+    
+    public void  setFigura(String figura){
+        this.figura = figura;
+    
+    }
+    public String getFigura(){
+    return figura;
+    }
+    
+    public void Figura(){
+        
+                if(figura.equals("cuadrado")){
+                   Calular_Area();
+                   }
+                else
+                {
+                    if(figura.equals("rectangulo"))
+                    {
+                   Calular_Area();
+                   }
+                else
+                {
+                  System.out.println("No existe esa informacion");
+                    }
+    
+             }
+    }
+public void Calular_Area(){
+float area=largo*ancho;
+System.out.println("El area es : " + area);
+System.out.println("La figura resultante es : " + figura);
+ 
+            }
+            
+
+}
