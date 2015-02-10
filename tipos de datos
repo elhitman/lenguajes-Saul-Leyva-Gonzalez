@@ -1,0 +1,66 @@
+configuracion boton********************************
+private void botonCalcularareaActionPerformed(java.awt.event.ActionEvent evt) {                                                  
+      
+        
+        String numeroFalso="4";
+        
+        //aqui creamos objeto de la clase cuadrado
+        cuadrado c=new cuadrado();
+        c.setLado(numeroFalso);
+        etiquetaResultado.setText(textoLado.getText()); textoLado.getText();
+    }                                                 
+********************************************clase geometria********
+package unitec.proyecto.geometria;
+
+
+public class cuadrado {
+    
+    private float lado;
+
+    public float getLado() {
+        return lado;
+    }
+
+    public void setLado(float lado) {
+        this.lado = lado;
+    }
+    
+}
+
+
+***********************************calculo area********
+private void botonCalcularareaActionPerformed(java.awt.event.ActionEvent evt) {                                                  
+      
+        
+        String numeroFalso="4";
+        //aqui creamos objeto de la clase cuadrado
+        Cuadrado c=new Cuadrado();
+        c.setLado(Float.parseFloat(textoLado.getText()));
+        etiquetaResultado.setText(textoLado.getText()); textoLado.getText();
+etiquetaResultado.setText("el qarea es: "+c.calcularArea());
+
+
+
+
+*** **** ***clase ********
+package unitec.proyecto.geometria;
+
+
+public class Cuadrado {
+    
+    private float lado;
+
+    public float getLado() {
+        return lado;
+    }
+
+    public void setLado(float lado) {
+        this.lado = lado;
+    }
+    public float calcularArea(){
+        
+        return lado*lado;
+    }
+    
+}
+
