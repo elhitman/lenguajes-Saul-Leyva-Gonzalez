@@ -24,7 +24,9 @@ public class CiclosFor {
     x[2]=321;
     
     //for antiguo
-   /* for (int i=0;i<4;i++){
+   /* 
+    
+    for (int i=0;i<4;i++){
         System.out.println(x[i]);
         //este es un ejemplo de execption tipo unchecked
     }
