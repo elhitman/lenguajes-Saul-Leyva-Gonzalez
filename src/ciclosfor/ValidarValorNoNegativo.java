@@ -5,12 +5,11 @@
  */
 package ciclosfor;
 
-import java.lang.Exception;
-public class NumeroNoNegativoException extends Exception{
+public class ValidarValorNoNegativo {
     
-    public NumeroNoNegativoException(){
-        super("ll siento no acepto valores negativos");
+    public void validar(float valor)throws NumeroNoNegativoException{
+        
+        if (valor<0)throw new NumeroNoNegativoException();
     }
-    
     
 }

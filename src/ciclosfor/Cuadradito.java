@@ -5,12 +5,11 @@
  */
 package ciclosfor;
 
-import java.lang.Exception;
-public class NumeroNoNegativoException extends Exception{
-    
-    public NumeroNoNegativoException(){
-        super("ll siento no acepto valores negativos");
-    }
-    
+/**
+ *
+ * @author TOSHIBA
+ */
+public class Cuadradito {
+   
     
 }
