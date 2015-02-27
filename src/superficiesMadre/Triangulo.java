@@ -9,7 +9,7 @@ package superficiesMadre;
  *
  * @author TOSHIBA
  */
-public class Triangulo {
+public class Triangulo implements Superficie{
 
     public Triangulo() {
     }
@@ -19,6 +19,7 @@ public class Triangulo {
         this.altura = altura;
     }
 public float calcularArea(){
+    System.out.print("area del triangulo es:");
     return (base*altura)/2;
 }
     public float getBase() {

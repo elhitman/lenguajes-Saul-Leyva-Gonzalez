@@ -9,7 +9,7 @@ package superficiesMadre;
  *
  * @author campitos
  */
-public class Rectangulo {
+public class Rectangulo implements Superficie {
     
     private float ladomayor;
     private float ladomenor;
@@ -23,6 +23,7 @@ public class Rectangulo {
     }
     
 public float calcularArea(){
+    System.out.print("el area del rectangulo es:");
     return ladomayor+ladomenor;
 }
     public float getLadomayor() {
@@ -44,4 +45,4 @@ public float calcularArea(){
     }
     
     
-}
+

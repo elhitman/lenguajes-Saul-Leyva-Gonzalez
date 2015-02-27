@@ -5,7 +5,7 @@
  */
 package superficiesMadre;
 
-import com.capitulo5.herencia.Superficie;
+
 
 /**
  *
@@ -22,6 +22,7 @@ public class Circulo implements Superficie {
     }
     
     public float calcularArea(){
+        System.out.println("el area del circulo es");
      return 3.1416f*radio*radio;   
     }
 

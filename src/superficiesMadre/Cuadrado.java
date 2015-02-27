@@ -5,16 +5,13 @@
  */
 package superficiesMadre;
 
-import com.capitulo5.herencia.FueraDeRangoException;
-import com.capitulo5.herencia.ValidarValores;
-import com.capitulo5.herencia.ValorNegativoException;
 
 /**
  *
  * @author campitos
  * 
  */
-public class Cuadrado {
+public class Cuadrado implements Superficie{
     
 private float lado;
 
@@ -23,9 +20,8 @@ private float lado;
  * @param lado  El parametro que debes ingresar es el valor
  * del lado de tu cuadrado
  */
-    public Cuadrado(float lado) throws FueraDeRangoException, ValorNegativoException {
-               ValidarValores.validarValorNoNegativo(lado);
-        ValidarValores.validarRango(lado);
+    public Cuadrado(float lado){
+              
  
         this.lado = lado;
     }
@@ -39,14 +35,14 @@ private float lado;
         return lado;
     }
 
-    public void setLado(float lado) throws FueraDeRangoException, ValorNegativoException {
-        ValidarValores.validarValorNoNegativo(lado);
-        ValidarValores.validarRango(lado);
+   public void setLado(float lado)  {
+       
        
         this.lado = lado;
     }
     
       public float calcularArea() {
+          System.out.print("el area del cuadrado es:");
   float area=lado*lado;
   return area;
     }
